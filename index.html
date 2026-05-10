@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Steam Machine | The Power of PC, The Ease of Console</title>
+<meta content="Experience the ultimate gaming hybrid with Steam Machine. Combining the library of a PC with the comfort of a console." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#131314",
+                      "on-tertiary": "#372f23",
+                      "secondary": "#bac7dd",
+                      "surface-container-lowest": "#0e0e0f",
+                      "surface-container-high": "#2a2a2a",
+                      "on-secondary-container": "#acb9ce",
+                      "secondary-fixed-dim": "#bac7dd",
+                      "tertiary": "#d2c4b3",
+                      "tertiary-fixed": "#efe0ce",
+                      "surface-variant": "#353435",
+                      "on-primary": "#2d3038",
+                      "outline": "#909095",
+                      "surface-container-low": "#1c1b1c",
+                      "background": "#131314",
+                      "surface-container": "#201f20",
+                      "primary-fixed": "#e0e2ec",
+                      "on-secondary-fixed": "#0f1c2c",
+                      "surface-bright": "#3a3939",
+                      "surface-tint": "#c4c6d0",
+                      "tertiary-fixed-dim": "#d2c4b3",
+                      "on-error-container": "#ffdad6",
+                      "secondary-container": "#3d4a5b",
+                      "inverse-surface": "#e5e2e2",
+                      "outline-variant": "#45474b",
+                      "inverse-on-surface": "#313031",
+                      "on-tertiary-fixed": "#221a0f",
+                      "on-secondary": "#243142",
+                      "error-container": "#93000a",
+                      "primary-fixed-dim": "#c4c6d0",
+                      "on-tertiary-fixed-variant": "#4f4538",
+                      "tertiary-container": "#20190e",
+                      "on-primary-container": "#80828b",
+                      "on-error": "#690005",
+                      "inverse-primary": "#5c5e67",
+                      "primary-container": "#171a21",
+                      "on-primary-fixed": "#191c23",
+                      "on-secondary-fixed-variant": "#3b4859",
+                      "error": "#ffb4ab",
+                      "primary": "#c4c6d0",
+                      "on-tertiary-container": "#8d8171",
+                      "surface-container-highest": "#353435",
+                      "on-surface": "#e5e2e2",
+                      "on-surface-variant": "#c6c6cb",
+                      "surface": "#131314",
+                      "secondary-fixed": "#d6e3f9",
+                      "on-primary-fixed-variant": "#44474f",
+                      "on-background": "#e5e2e2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "md": "24px",
+                      "gutter": "20px",
+                      "xs": "8px",
+                      "sm": "16px",
+                      "xl": "64px",
+                      "margin": "32px",
+                      "base": "4px",
+                      "lg": "40px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Inter"],
+                      "label-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "headline-xl": ["Inter"],
+                      "body-md": ["Inter"],
+                      "label-sm": ["Inter"]
+              },
+              "fontSize": {
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "headline-xl": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #171a21; /* Base Level 0 */
+            font-family: 'Inter', sans-serif;
+            color: #e5e2e2;
+        }
+        .glass-panel {
+            background: rgba(27, 40, 56, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .interactive-glow:hover {
+            box-shadow: 0 0 20px rgba(102, 192, 244, 0.2);
+            border-color: rgba(102, 192, 244, 0.4);
+        }
+        .steam-gradient-text {
+            background: linear-gradient(135deg, #c4c6d0 0%, #66c0f4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-primary-container text-on-surface selection:bg-secondary/30">
+<!-- TopAppBar -->
+<header class="bg-surface/85 backdrop-blur-xl docked full-width top-0 sticky z-50 border-b border-outline-variant/20 shadow-none">
+<div class="flex justify-between items-center max-w-[1600px] mx-auto px-margin py-sm">
+<div class="font-headline-xl text-primary font-bold tracking-tight uppercase">
+                Steam Machine
+            </div>
+<nav class="hidden md:flex items-center gap-md">
+<a class="font-label-md text-label-md text-on-surface-variant font-medium hover:text-primary transition-all duration-300" href="#description">Features</a>
+<a class="font-label-md text-label-md text-on-surface-variant font-medium hover:text-primary transition-all duration-300" href="#specs">Specs</a>
+<a class="font-label-md text-label-md text-on-surface-variant font-medium hover:text-primary transition-all duration-300" href="#benefits">Benefits</a>
+<a class="bg-primary text-on-primary px-sm py-xs font-label-md text-label-md rounded-lg active:scale-95 transition-transform hover:shadow-[0_0_15px_rgba(102,192,244,0.3)]" href="#purchase">Buy Now</a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden" id="hero">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40" data-alt="The official Steam Machine console with professional lighting and blue neon accents." src="https://lh3.googleusercontent.com/aida/ADBb0ujcpYu9KupoX6AlYaGGln1fGgsvRNk9LR-9dKeiaRSEjcslh3Q0ufus9xSshe21-_gKoJnhBUBeG0-gW8BdZxo2Uz17OqG70pOeKYiPc74YUHhP4iv_pmG9wzq4SMwpe__65iQipnv1hlkLdyNzJnU3-egACl6yA3cHSTsXt9segPZXzYbrmRPs6ZkgM15aaWEpDH7mJli3mbNhyXt6Tk6xlh2lVqSCv6sg7J3HQVN53GCvDSiwu3Elwh_hfHdHLU5G-KKoM1RaCw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-transparent to-primary-container/50"></div>
+</div>
+<div class="relative z-10 max-w-[1600px] mx-auto px-margin w-full">
+<div class="max-w-3xl">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-md">
+                        Steam Machine: <br/>
+<span class="steam-gradient-text">The Power of PC, The Ease of Console.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-xl">
+                        Unleash your entire Steam library in the living room. High-performance hardware meets the intuitive SteamOS for a seamless gaming experience.
+                    </p>
+<div class="flex flex-wrap gap-sm">
+<a class="bg-secondary-container text-on-secondary-container px-lg py-sm rounded-lg font-label-md text-label-md hover:bg-secondary-container/80 transition-colors flex items-center gap-xs" href="#description">
+                            Explore Features <span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+</a>
+<a class="bg-primary text-on-primary px-lg py-sm rounded-lg font-label-md text-label-md hover:shadow-[0_0_20px_rgba(102,192,244,0.4)] transition-all" href="#purchase">
+                            Buy Now
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Product Description -->
+<section class="py-xl bg-surface-container-lowest" id="description">
+<div class="max-w-[1600px] mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-md">Hybrid Performance Redefined</h2>
+<div class="space-y-sm font-body-md text-body-md text-on-surface-variant">
+<p>The Steam Machine isn't just a console; it's a fully-realized high-end gaming PC in a compact, living-room-ready form factor. Powered by the Linux-based SteamOS, it provides a dedicated 10-foot interface for your TV while maintaining the open-source freedom of a desktop computer.</p>
+<p>Switch to Desktop Mode instantly to browse the web, install productivity software, or customize your setup. Why settle for a closed ecosystem when you can have the flexibility of a workstation with the plug-and-play simplicity of hardware designed for play?</p>
+</div>
+<div class="mt-lg p-md border border-outline-variant/30 rounded-xl bg-surface-container">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-xs">Unmatched Value</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Skip the "console tax." Access your existing Steam library without rebuying titles and enjoy free multiplayer gaming for life.</p>
+</div>
+</div>
+<div class="relative aspect-video rounded-xl overflow-hidden shadow-2xl border border-white/5"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="w-full h-full" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OmKrKTwtukE" title="Steam Machine Official Video"></iframe></div>
+</div>
+</div>
+</section>
+<!-- Comparison Table -->
+<section class="py-xl bg-primary-container" id="specs">
+<div class="max-w-[1600px] mx-auto px-margin">
+<div class="text-center mb-xl">
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-sm">The Competitive Edge</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">See how Steam Machine stacks up against the current generation.</p>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse glass-panel rounded-xl overflow-hidden">
+<thead>
+<tr class="border-b border-outline-variant/20 bg-surface-container-high/50">
+<th class="p-md font-label-md text-label-md text-primary">Device</th>
+<th class="p-md font-label-md text-label-md text-primary">Price</th>
+<th class="p-md font-label-md text-label-md text-primary">Library</th>
+<th class="p-md font-label-md text-label-md text-primary">Portability</th>
+<th class="p-md font-label-md text-label-md text-primary">OS Flexibility</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface-variant">
+<tr class="border-b border-outline-variant/10 bg-primary/5">
+<td class="p-md font-bold text-on-surface">Steam Machine</td>
+<td class="p-md">$499 - $899</td>
+<td class="p-md">80,000+ Titles</td>
+<td class="p-md">Compact Hub</td>
+<td class="p-md text-primary font-bold">Open (SteamOS/Linux/Win)</td>
+</tr>
+<tr class="border-b border-outline-variant/10">
+<td class="p-md font-medium">PlayStation 5</td>
+<td class="p-md">$499</td>
+<td class="p-md">Curated Store</td>
+<td class="p-md">Large Tower</td>
+<td class="p-md">Closed Ecosystem</td>
+</tr>
+<tr class="border-b border-outline-variant/10">
+<td class="p-md font-medium">Xbox Series X</td>
+<td class="p-md">$499</td>
+<td class="p-md">Curated Store</td>
+<td class="p-md">Desktop Box</td>
+<td class="p-md">Closed Ecosystem</td>
+</tr>
+<tr>
+<td class="p-md font-medium">Gaming Laptop</td>
+<td class="p-md">$1,200+</td>
+<td class="p-md">PC Libraries</td>
+<td class="p-md">High (Portable)</td>
+<td class="p-md">Open (Windows)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Key Benefits List -->
+<section class="py-xl bg-surface-container-lowest" id="benefits">
+<div class="max-w-[1600px] mx-auto px-margin">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Benefit 1 -->
+<div class="glass-panel p-md rounded-xl interactive-glow flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">library_books</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg text-on-surface">1,000s of Games</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Access your entire existing Steam library instantly. No rebuying, just playing.</p>
+</div>
+<!-- Benefit 2 -->
+<div class="glass-panel p-md rounded-xl interactive-glow flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">settings_input_component</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg text-on-surface">Upgradable</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Standard PC parts mean you can upgrade your RAM or storage as your library grows.</p>
+</div>
+<!-- Benefit 3 -->
+<div class="glass-panel p-md rounded-xl interactive-glow flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg text-on-surface">Desktop Mode</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">One click turns your console into a powerful Linux workstation for any task.</p>
+</div>
+<!-- Benefit 4 -->
+<div class="glass-panel p-md rounded-xl interactive-glow flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">gamepad</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg text-on-surface">Convenience</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Boot straight into Big Picture Mode for a streamlined controller-first experience.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Purchase Section -->
+<section class="py-xl" id="purchase">
+<div class="max-w-[1200px] mx-auto px-margin">
+<div class="bg-gradient-to-br from-surface-container-high to-primary-container p-xl rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center">
+<span class="text-primary font-label-sm text-label-sm uppercase tracking-widest mb-sm">Limited Time Offer</span>
+<h2 class="font-display-lg text-display-lg text-on-surface mb-md">Ready to Change the Way You Play?</h2>
+<div class="flex items-baseline gap-xs mb-lg">
+<span class="font-body-lg text-body-lg text-on-surface-variant">Starting at</span>
+<span class="font-display-lg text-display-lg text-primary">$499.00</span>
+</div>
+<button class="bg-primary text-on-primary px-xl py-md rounded-full font-headline-lg text-headline-lg hover:scale-105 transition-transform shadow-[0_0_30px_rgba(102,192,244,0.3)]">
+                        Buy Now
+                    </button>
+<p class="mt-md font-label-md text-label-md text-on-surface-variant">Includes Steam Machine Console, Steam Controller, and 3-month Game Pass.</p>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl border-t border-outline-variant/10 bg-surface-container-lowest" id="contact">
+<div class="max-w-[1600px] mx-auto px-margin grid grid-cols-1 lg:grid-cols-2 gap-xl">
+<div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-md">Get in Touch</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Have questions about compatibility or hardware specs? Our team is here to help you build the perfect setup.</p>
+<a class="inline-flex items-center gap-xs text-primary font-bold hover:underline" href="#">
+                        Official Valve Support <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+<form class="space-y-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-xs">Name</label>
+<input class="w-full bg-primary-container border border-outline-variant rounded-lg p-sm focus:ring-2 focus:ring-primary focus:outline-none transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-xs">Email</label>
+<input class="w-full bg-primary-container border border-outline-variant rounded-lg p-sm focus:ring-2 focus:ring-primary focus:outline-none transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-xs">Message</label>
+<textarea class="w-full bg-primary-container border border-outline-variant rounded-lg p-sm h-32 focus:ring-2 focus:ring-primary focus:outline-none transition-all" placeholder="How can we help?"></textarea>
+</div>
+<button class="w-full md:w-auto bg-secondary-container text-on-secondary-container px-lg py-sm rounded-lg font-label-md text-label-md hover:bg-secondary-container/80 transition-all" type="submit">
+                        Send Message
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest full-width border-t border-outline-variant/10 shadow-none">
+<div class="max-w-[1600px] mx-auto px-margin py-xl flex flex-col md:flex-row justify-between items-center gap-md">
+<div class="flex flex-col gap-xs items-center md:items-start">
+<div class="font-headline-lg text-on-surface font-bold uppercase tracking-tighter">Steam Machine</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left max-w-sm">
+                    © 2024 Valve Corporation. All rights reserved. Steam, the Steam logo, and Steam Machine are trademarks and/or registered trademarks of Valve Corporation.
+                </p>
+</div>
+<div class="flex gap-md">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Support</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Legal</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
