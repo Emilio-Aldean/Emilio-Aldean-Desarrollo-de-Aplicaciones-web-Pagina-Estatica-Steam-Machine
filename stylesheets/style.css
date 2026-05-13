@@ -1,0 +1,23 @@
+body {
+    background-color: #171a21; /* Base Level 0 */
+    font-family: 'Inter', sans-serif;
+    color: #e5e2e2;
+}
+
+.glass-panel {
+    background: rgba(27, 40, 56, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.interactive-glow:hover {
+    box-shadow: 0 0 20px rgba(102, 192, 244, 0.2);
+    border-color: rgba(102, 192, 244, 0.4);
+}
+
+.steam-gradient-text {
+    background: linear-gradient(135deg, #c4c6d0 0%, #66c0f4 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
