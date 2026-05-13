@@ -2,11 +2,11 @@
 
 ## Descripción General
 
-**Steam Machine** es una página web estática de producto desarrollada como parte del curso de Desarrollo de Aplicaciones Web. El sitio presenta la consola Steam Machine de Valve Corporation, destacando sus características, especificaciones técnicas, beneficios y opciones de compra.
+El **Steam Machine Web Page** es una página web estática de producto desarrollada para promocionar la consola **Steam Machine** de Valve Corporation, destacando sus características, especificaciones técnicas, beneficios y opciones de compra.
 
 ### Propósito
 
-Informar y persuadir a potenciales compradores sobre las ventajas del Steam Machine frente a otras consolas del mercado, comunicando su propuesta de valor como un híbrido entre PC y consola.
+El propósito es de informar y persuadir a potenciales compradores sobre las ventajas del Steam Machine frente a otras consolas del mercado, comunicando su propuesta de valor como un híbrido entre PC (personal computer) y consola de videojuegos.
 
 ### Público Objetivo
 
